@@ -157,9 +157,7 @@ header a:hover{
     margin-top: .5rem;
     margin-bottom: 1rem;
 }
-.photoContainer .photo img{
-    width: 9rem;
-}
+
 /* FOOTER */
 footer{
     padding: 2rem;
