@@ -56,7 +56,6 @@ body {
     background-color: #f4f4f4;
     width: 90%;
     margin: 0 auto;
-    overflow: hidden;
 }
 ul {
     margin: 0;
@@ -165,6 +164,7 @@ header a:hover{
 footer{
     padding: 2rem;
     margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     color: #ffffff;
     background-color: #e8491d;
     text-align: center; 
