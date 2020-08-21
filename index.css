@@ -78,6 +78,10 @@ header {
     min-height: 70px;
     border-bottom: #e8491d 3px solid;
 }
+.headerContainer{
+    display:flex;
+    justify-content: space-between;
+}
 header a{
     color: #ffffff;
     text-decoration: none;
@@ -85,20 +89,16 @@ header a{
     font-size: 16px;
 }
 
-header li{
-    float: left;
+header li{    
     padding: 0 20px 0 20px;
 }
-header #branding {
-    float: left;
-}
+
 header #branding h1{
     margin: 0.5rem;
     font-size: 2rem;
 }
 header nav{
-    float: right;
-    margin-top: 10px;
+   margin-top: 10px;
 }
 
 header a:hover{
@@ -126,13 +126,18 @@ header a:hover{
     font-size: 1.5rem;
     
 }
+#mainContent li{
+    margin-top: 2rem;
+}
 /* NEWSLETTER */
 .newsletter {
+    margin-top: 1rem;
     display: flex;
     justify-content: space-between;
     padding: 1.5rem;
     color: #ffffff;
     background-color: #35424a;
+    border-bottom: #e8491d 3px solid;
     margin-bottom: 1rem;  
 }
 .newsletter input[type='email']{
