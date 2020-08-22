@@ -172,3 +172,37 @@ footer{
     background-color: #e8491d;
     text-align: center; 
 }
+
+/* MEDIA BREAKS */
+@media (max-width: 1050px){
+    body{
+        width: 95%;
+    }
+    header #branding h1{
+        font-size: 95%;
+    }
+    header nav{
+        margin-top: 1px;
+    }
+    #mainContent h1{
+        font-size: 4rem;
+    }
+    
+    .newsletter{
+        flex-direction: column;
+        text-align: center;
+    }
+    .newsletter h1{
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+    .newsletter input[type='email']{
+        width: 28rem;
+    }
+    .photoContainer{
+        flex-direction: column;
+    }
+    .photoContainer p{
+        margin-bottom: 1rem;
+    }
+}
