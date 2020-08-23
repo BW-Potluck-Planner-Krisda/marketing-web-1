@@ -68,8 +68,9 @@ ul {
 header {
     background: #070707;
     color: #ffffff;
-    padding-top: 30px;
-    max-height: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 60px;
 }
 .headerContainer{
     display:flex;
@@ -171,13 +172,13 @@ header a:hover{
 
 /* FOOTER */
 footer{
-    padding: 2rem;
+    padding: 1rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     color: #070707;
     background-color: #b1e084;
     text-align: center;
-    height: 5px;
+    min-height: 5px;
 }
 footer p{
     font-size: 20px;
@@ -215,5 +216,13 @@ footer p{
     }
     .photoContainer img{
         width: 55%;
+    }
+}
+@media (max-width: 790px){
+    .photoContainer img{
+        width: 50%;
+    }
+    .newsletter input[type='email']{
+        width: 15rem;
     }
 }
