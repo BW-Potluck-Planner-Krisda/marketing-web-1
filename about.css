@@ -64,12 +64,12 @@ body h1{
     font-size: 3.5rem;
 }
 header {
-    background: #35424a;
+    background: #070707;
     color: #ffffff;
     border-bottom: #e8491d 3px solid;
     display: flex;
-    min-height: 70px;
-    justify-content: space-evenly;
+    max-height: 100px;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 3rem;
 }
@@ -94,11 +94,12 @@ header a{
     height: auto;
 }
 footer{
-    margin-top: 1rem;
+    padding: 2rem;
+    margin-top: 1.5rem auto;
+    color: #070707;
+    background-color: #b1e084;
     text-align: center;
+    height: 5px;
 }
-footer img{
-    width: 90px;
-    height: auto;
-}
+
 

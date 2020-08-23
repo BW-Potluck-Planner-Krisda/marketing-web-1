@@ -120,9 +120,7 @@ header a:hover{
 #mainContent p{
     text-align: left;
     font-size: 2rem;
-    margin-bottom: 3rem;
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+    margin: 2.5rem 2.5rem;
 }
 #mainContent a{
     color: #eeeeee;
@@ -133,7 +131,7 @@ header a:hover{
     border: .5rem outset #188f00;
 }
 .photo img {
-    width: 400px;
+    width: 300px;
     height: auto;
 }
 #mainContent li{
