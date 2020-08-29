@@ -1,35 +1,24 @@
-const photoImages1 = document.querySelector('.photo1');
-const photoImages2 = document.querySelector('.photo2');
-const photoImages3 = document.querySelector('.photo3');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { applyMiddleware, createStore } from 'redux';
+import { Provider } from 'react-redux';
+import thunk from 'redux-thunk';
+import { dataReducer } from './components/reducers/dataReducer';
+import { fetchReducer } from './components/reducers/fetchReducer';
+import { combineReducers } from 'redux';
+import './index.css';
+import App from './App';
 
+const rootReducer = combineReducers({ dataReducer, fetchReducer })
 
+const store = createStore(rootReducer, applyMiddleware(thunk));
 
-
-
-console.log(photoImages1)
-
-photoImages1.addEventListener('mouseenter', () =>{
-    photoImages1.style.transform = "scale(1.2)";
-    photoImages1.style.transition = "all 0.3s"
-})
-photoImages1.addEventListener('mouseleave', () =>{
-    photoImages1.style.transform = "scale(1.0)";
-});
-
-
-photoImages2.addEventListener('mouseenter', () =>{
-    photoImages2.style.transform = "scale(1.2)";
-    photoImages2.style.transition = "all 0.3s"
-})
-photoImages2.addEventListener('mouseleave', () =>{
-    photoImages2.style.transform = "scale(1.0)";
-});
-
-
-photoImages3.addEventListener('mouseenter', () =>{
-    photoImages3.style.transform = "scale(1.2)";
-    photoImages3.style.transition = "all 0.3s"
-})
-photoImages3.addEventListener('mouseleave', () =>{
-    photoImages3.style.transform = "scale(1.0)";
-});
+ReactDOM.render(
+  <Provider store={store}>
+    <Router>
+      <App />
+    </Router>
+  </Provider>,
+  document.getElementById('root')
+);
