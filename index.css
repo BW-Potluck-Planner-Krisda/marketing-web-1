@@ -126,6 +126,10 @@ header a:hover{
     background-color: #188f00;
     border: .5rem ridge #188f00;
 }
+#mainContent a:hover{
+    color: #188f00;
+    background-color: #eeeeee;
+}
 
 #mainContent li{
     margin-top: 2rem;
@@ -170,6 +174,10 @@ header a:hover{
     padding-left: 2rem;
     padding-right: 2rem;
     color: #ffffff;
+}
+.button_1:hover{
+    background: #ffffff;
+    color: #188f00;
 }
 
 /* FOOTER */
@@ -226,6 +234,10 @@ footer p{
     .photoContainer img{
         width: 55%;
     }
+    .photo img{
+        width: 50%;
+        padding: 10px;
+    }
 }
 @media (max-width: 790px){
     #mainContent h1{
@@ -239,6 +251,11 @@ footer p{
     }
     .photoContainer img{
         width: 70%;
+    }
+    .photo img{
+        width: 275px;
+        height: auto;
+        padding: 10px;
     }
     .newsletter h1 {
         font-size: 2rem;
